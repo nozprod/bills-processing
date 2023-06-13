@@ -1,0 +1,40 @@
+issuer: Adobe
+keywords:
+- Adobe
+- IE6364992H
+currency: EUR
+date_formats:
+  - '%d-%b-%Y'
+fields:
+  amount_ht:
+    required: True
+    type: float
+    currencies: [ '€' ]
+    regex: '[^\\d]*(\\d+\\.\\d{2})'
+  date:
+    required: True
+    type: date
+    regex: '[^\\d]*(\\d{2}-[A-Z]{3}-\\d{4})'
+  tva_rate:
+    required: True
+    type: float
+    regex: '[^\\d]*(\\d+\\.\\d{2})%'
+  tva_amount:
+    required: True
+    type: float
+    currencies: [ '€' ]
+    regex: '[^\\d]*(\\d+\\.\\d{2})'
+  amount_ttc:
+    required: True
+    type: float
+    currencies: [ '€' ]
+    regex: '[^\\d]*(\\d+\\.\\d{2})'
+options:
+  remove_whitespace: False
+  remove_accents: False
+  lowercase: False
+  currency: '€'
+  date_formats:
+    - '%d-%b-%Y'
+  languages:
+    - fr

@@ -1,0 +1,20 @@
+issuer: Google Commerce Limited
+fields:
+  invoice_number: Numéro de la facture :\s+(\d+-\d+)
+  date: Récapitulatif pour la période suivante\s+:\s+(\d{1,2}\s+\w+\.\s+\d{4})
+  amount: Total en EUR\s+([\d,]+) €
+  ht: Sous-total en EUR\s+([\d,]+) €
+  tva_rate: TVA \((\d{1,3})%\)
+  tva_amount: TVA \(\d{1,3}%\)\s+([\d,]+) €
+keywords:
+  - Google Commerce Limited
+  - IE9825613N
+exclude keywords:
+  - Orange
+options:
+  currency: EUR
+  date_formats:
+    - '%d .%b .%Y'
+  languages:
+    - fr
+  decimal_separator: ','
